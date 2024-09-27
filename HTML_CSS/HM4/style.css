@@ -1,0 +1,115 @@
+.navigation { 
+    background-image: url(./Files/Media/navbar.jpg);
+    background-size: 2000px 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -100px;
+    text-align: right;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: ridge 2px red; padding: 5px 15px; 
+    
+}
+
+.div1 {
+    font-family: cursive;
+    text-align:  center;
+    padding: 10px 300px;
+
+}
+
+
+/* 1. Типовий селектор елемента */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Селектор класу */
+.list {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(./Files/Media/Ferretti\ Sunset.jpg);
+    background-position: 0 -200px; 
+}
+
+.footer {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(223, 185, 18, 0.418);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-position: 0 -200px; 
+}
+strong {
+    font-size: 45px;
+    color: blue;
+}
+
+/* 3. Селектор ідентифікатора */
+#MT {
+    color: #333;
+    text-align: center;
+}
+
+/* 4. Селектори псевдокласу */
+a:hover {
+    color: red;
+}
+
+/* 5. Селектори псевдоелементу */
+h2::before {
+    content: "👉 ";
+    color: #333;
+}
+
+/* 6. Атрибутний селектор */
+[href] {
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+}
+
+/* 7. Групування селекторів */
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 8. Селектори нащадків */
+ul li {
+    color: #555;
+}
+
+/* 9. Селектори дитини */
+.list > ul {
+    padding-left: 20px;
+}
+
+/* 10. Селектори сусіднього елемента */
+h2 + p {
+    font-style: italic;
+}
+
+/* 11. Селектори загального брата */
+h2 ~ p {
+    color: gray;
+}
+
+/* 12. Селектори атрибуту з конкретним значенням */
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}

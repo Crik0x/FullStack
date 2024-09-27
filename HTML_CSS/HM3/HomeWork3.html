@@ -1,0 +1,109 @@
+<!--
+Borders https://developer.mozilla.org/en-US/docs/Web/CSS/border0
+
+ - Створіть html файл, використовуючи теги з попередньої лекції напишіть
+   пояснення того що таке відносний та абсолютний шлях
+
+ - Стилізуйте теги (використовуючи селектори по тегу, класу, ід)
+
+ - Застовуйте відступи (внутрішні та зовнішні) та бордер
+
+ - Скачайте 3 картинки, 1 аудіо (до 30 сек) та відео (до 10 сек),
+   відображіть в html це все
+
+ - Візьмуть 3 картинки з інтернету і відображіть
+-->
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Відносний та Абсолютний шлях</h1>
+    </header>
+    <pre></pre>
+    <main>
+
+        <div>
+            <section class="lemon">
+                <h2 class="what" style="border-bottom: 0">Що таке шлях в HTML?</h2>
+                <p>Шлях (або URL) - це адреса до файлу, який ми хочемо використати на веб-сторінці, наприклад,
+                    зображення, відео, або інший HTML-файл.</p>
+            </section>
+        </div>
+
+        <div>
+            <section class="second">
+                <h2 class="solution" style="border-top: 0; border-bottom: 0;">Відносний шлях</h2>
+                <p>Відносний шлях вказує на місцезнаходження файлу відносно поточного документа. Це означає, що шлях
+                    залежить від того, де знаходиться HTML файл, в якому він використовується.</p>
+                <p>Наприклад, якщо ваш HTML файл знаходиться у папці <code>website</code>, а зображення в папці
+                    <code>images</code> всередині цієї ж папки, то відносний шлях до зображення буде виглядати так:</p>
+                <pre
+                    style="text-align: center; "><code id="lemon" >&lt;img src="images/photo.jpg" alt="Фото"&gt;</code></pre>
+
+            </section>
+
+        </div>
+
+        <div>
+            <section class="lemon">
+                <h2 class="what" style="border-top: 0; border-bottom: 0;">Абсолютний шлях</h2>
+                <p>Абсолютний шлях вказує на точне місцезнаходження файлу на сервері або в мережі Інтернет, починаючи з
+                    кореневого каталогу або включаючи повний URL.</p>
+                <p>Наприклад, якщо зображення знаходиться за URL-адресою
+                    <code>https://www.example.com/images/photo.jpg</code>, то абсолютний шлях буде виглядати так:</p>
+                <pre
+                    style="text-align: center;"><code id="lemon" >&lt;img src="https://www.example.com/images/photo.jpg" alt="Фото"&gt;</code></pre>
+            </section>
+        </div>
+
+        <div>
+            <section class="second">
+                <h2 class="solution" style="border-top: 0;">Приклад використання</h2>
+                <p>Ось приклад використання відносного шляху для зображення в HTML:</p>
+                <img src="IMG/Ferretti 680 - Jumpy Blue Prime Club - Amalfi Napoli Capri Esterno 3.webp" alt="Фото"
+                    style="border: 1px solid black; width: 300px;">
+                <img src="https://www.blueprime.club/Cms_Data/Contents/blueprime_en/Folders/Yacht/~contents/NXN2LZNL7T8GY79X/1-Ferretti-680-Jumpy-Blue-Prime-Club-Amalfi-Napoli-Capri-Esterno-3.jpg"
+                    alt="Фото" style="border: 1px solid black; width: 300px;">
+
+                <p>А ось приклад використання абсолютного шляху для зображення:</p>
+                <img src="https://www.blueprime.club/Cms_Data/Contents/blueprime_en/Folders/Yacht/~contents/NXN2LZNL7T8GY79X/1-Ferretti-680-Jumpy-Blue-Prime-Club-Amalfi-Napoli-Capri-Esterno-3.jpg"
+                    alt="Фото" style="border: 1px solid black; width: 300px;">
+
+                <video autoplay muted loop playsinline poster width="302" height="198.89">
+                    <!-- <source src="https://www.blueprime.club/Cms_Data/Contents/blueprime_en/Media/media-images/home-video.mp4" type="video/webm" /> -->
+
+                    <source
+                        src="https://www.blueprime.club/Cms_Data/Contents/blueprime_en/Media/media-images/home-video.mp4"
+                        type="video/mp4" />
+
+                    Download the
+                    <a href="/media/cc0-videos/flower.webm">WEBM</a>
+                    or
+                    <a href="/media/cc0-videos/flower.mp4">MP4</a>
+                    video.
+                </video>
+                <audio controls id="music">
+
+                    <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+        </div>
+    </main>
+
+    <footer style="background-color: lightgray; text-align: center; padding: 10px;">
+        <p>&copy; Mykola Stetsiuk</p>
+    </footer>
+
+</body>
+
+</html>

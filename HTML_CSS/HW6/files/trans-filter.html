@@ -1,0 +1,36 @@
+<!-- Cтворіть навігацію яка має бути зафіксована (position: fixed) в горі з переходами на:
+- Сторінку де використовується overflow (мінімум 3 блока)
+- Сторінку де використовується display i visibility (мінімум 4 блока)
+- Сторінку де використовується float (мінімум 4 блока)
+- Сторінку де будуть застосовані стилі із transform, filter, @keyframe -->
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform & Filter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="./overflow.html">Overflow</a></li>
+                <li><a href="./display-visibility.html">Display & Visibility</a></li>
+                <li><a href="./float.html">Float</a></li>
+                <li><a href="./trans-filter.html">Transform & Filter</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Сторінка з Transform, Filter та @keyframes</h1>
+        <div class="block-transform">
+            <div class="rotate">Блок з обертанням</div>
+            <div class="scale">Блок з масштабуванням</div>
+            <div class="filter-grayscale">Блок з чорно-білим фільтром</div>
+            <div class="animated">Анімований блок</div>
+        </div>
+    </div>
+</body>
+</html>
