@@ -1,0 +1,191 @@
+/* Загальний стиль для body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Стиль заголовків */
+h1, h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Таблиці стилі */
+table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+td:hover {
+    background-color: #af4261;
+    color: #ffffff;
+}
+
+/* Навігація */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #af4261;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #af4261;
+    color: #ffffff;
+}
+
+/* Стилізація музикантів */
+.musicians {
+    padding-left: 0;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.musician {
+    background: #ffffff;
+    border: 2px solid #af4261;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.musician:hover {
+    transform: translateY(-5px);
+}
+
+.musician-name {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #af4261;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+}
+
+/* Кубики */
+.cube-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    background-color: #af4261;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cubeA {
+    width: 50px;
+    height: 50px;
+    background-color: #4283af;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cubeB {
+    width: 50px;
+    height: 50px;
+    background-color: #77af42;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cube:hover {
+    background-color: #ffffff;
+    transform: rotate(20deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.cubeA:hover {
+    background-color: #ffffff;
+    transform: rotate(20deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.cubeB:hover {
+    background-color: #ffffff;
+    transform: rotate(20deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Позиціонування */
+.fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: -250px;
+}
+
+/* .sticky {
+    position: sticky;
+    top: 10px;
+    
+} */
+
+

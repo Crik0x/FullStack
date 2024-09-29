@@ -1,0 +1,73 @@
+<!-- Cтворіть навігацію яка має бути зафіксована (position: fixed) в горі з переходами на:
+- Сторінку де використовується overflow (мінімум 3 блока)
+- Сторінку де використовується display i visibility (мінімум 4 блока)
+- Сторінку де використовується float (мінімум 4 блока)
+- Сторінку де будуть застосовані стилі із transform, filter, @keyframe -->
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="./overflow.html">Overflow</a></li>
+                <li><a href="./display-visibility.html">Display & Visibility</a></li>
+                <li><a href="./float.html">Float</a></li>
+                <li><a href="./trans-filter.html">Transform & Filter</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Сторінка з Overflow</h1>
+        <div class="block-overflow">
+            
+            <div class="overflow-auto">
+                
+                <p style="text-align: center;"><b>Auto</b></p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium corporis dolor quasi
+                maiores. Deserunt nostrum et repellendus rem odio placeat ad nulla! Nihil perspiciatis doloribus
+                corporis consequuntur id. Iste, quas officia, tempora itaque nisi ratione consequuntur ipsam dolorum rem
+                veniam neque officiis, libero modi! Officiis, sequi inventore illo incidunt natus ratione corrupti
+                reprehenderit officia quasi esse facilis quis ab recusandae perspiciatis eius voluptatem reiciendis vel
+                repellat optio in voluptate ducimus aliquid neque. Beatae quisquam quam maiores necessitatibus itaque
+                reiciendis vitae unde, at libero modi, ratione officiis, eum magnam ipsam rem nam esse quod mollitia!
+                Neque rerum quod cum architecto?
+            </div>
+            <div class="overflow-hidden">
+                <p style="text-align: center;"><b>Hiden</b></p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                quibusdam minus neque eos ipsam. Aliquam, sapiente. Quia cumque corporis, optio nobis libero unde
+                corrupti harum aliquid architecto sequi veritatis dolores cum magnam maiores reiciendis doloribus? Harum
+                cum id nam, non repellendus natus repudiandae minima quibusdam fuga eveniet dolorem, corrupti
+                doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum pariatur neque quae
+                eligendi? Dignissimos at omnis maxime exercitationem impedit, quidem alias! Quisquam libero, incidunt
+                repudiandae ducimus tempore quidem a!
+                Sunt maiores impedit saepe sed, et, molestiae eos at, natus quo excepturi est eius quam nisi pariatur
+                quibusdam placeat nesciunt? Quod nam, laboriosam consectetur accusamus similique odit natus earum quia!
+            </div>
+            <div class="overflow-scroll">
+                <p style="text-align: center;"><b>Scroll</b></p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                quibusdam minus neque eos ipsam. Aliquam, sapiente. Quia cumque corporis, optio nobis libero unde
+                corrupti harum aliquid architecto sequi veritatis dolores cum magnam maiores reiciendis doloribus? Harum
+                cum id nam, non repellendus natus repudiandae minima quibusdam fuga eveniet dolorem, corrupti
+                doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum pariatur neque quae
+                eligendi? Dignissimos at omnis maxime exercitationem impedit, quidem alias! Quisquam libero, incidunt
+                repudiandae ducimus tempore quidem a!
+                Sunt maiores impedit saepe sed, et, molestiae eos at, natus quo excepturi est eius quam nisi pariatur
+                quibusdam placeat nesciunt? Quod nam, laboriosam consectetur accusamus similique odit natus earum quia!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!-- - Створити html файлик з медіа контентом (відео до 10 сек, картинка, аудіо до 10 сек)
+
+- Копіюйте html файлики з попередніх лекцій в окрему папку в вашому четвертому дз
+
+- Створіть хедер, стилізуйте по прикладу лекції, та створіть в ньому посилання на всі html файлики з попереднього пункту
+
+- Створіть ще один hmtl файлик на який буде в хедері зроблене посилання, використайте нумеровані та не нумеровані списки,
+  застосуйте принаймні 12 видів селекторів css, стилізуйте довільно 
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 4</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<header>
+    <nav class="navigation" ;
+    style="border: solid 1px aqua">
+        <ul style="padding-right: 15px;">
+            <a href="./Files/List.html"> List</a>
+            <a href="./Files/HW2/HW2.html" target="_blank">Lesson 2</a>
+            <a href="./Files/HW3/HW3.html" target="_blank">Lesson 3</a>
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+    <div class="div1">
+        <strong>
+            Creative HomeWork
+        </strong>
+        <div class="divIn1">
+            <audio controls id="music">
+
+                <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg">
+            </audio>
+            <div class="list">
+                <h1 id="MT">Списки та CSS Селектори</h1>
+            
+                <h2>Yacht Available</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum tempora molestiae debitis sapiente
+                    labore minima, iusto aut nisi corrupti hic culpa inventore incidunt corporis natus repellendus ipsa
+                    perferendis officiis dolorem laudantium facere. 
+                </p>
+
+                <ol>
+                    <li>Stradivaria</li>
+                    <li>Nausica</li>
+                    <li>Blade</li>
+                </ol>
+            
+                <h2>Experiences</h2>
+                <ul>
+                    <li>Sunset Experience</li>
+                    <li>Deep Experience</li>
+                    <li>Sharing Experience</li>
+                </ul>
+
+                <video autoplay muted loop playsinline poster width="302" height="198.89">
+                    <!-- <source src="https://www.blueprime.club/Cms_Data/Contents/blueprime_en/Media/media-images/home-video.mp4" type="video/webm" /> -->
+
+                    <source
+                        src="https://www.blueprime.club/Cms_Data/Contents/blueprime_en/Media/media-images/home-video.mp4"
+                        type="video/mp4" />
+
+                   
+                </video>
+
+
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <p>&copy; Mykola Stetsiuk</p>
+</footer>
+
+
+
+
+</html>

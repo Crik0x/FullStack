@@ -1,0 +1,218 @@
+/* Загальні стилі для всіх сторінок */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+}
+
+.content {
+    padding-top: 80px; /* Щоб контент не заходив під фіксовану навігацію */
+    margin: 20px;
+}
+
+/* Навігація */
+.navbar {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff6f61, #de3c4b);
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffde59;
+    transform: scale(1.1);
+}
+
+/* Overflow */
+/* .block-overflow > div {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ddd;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    transition: background-color 0.3s;
+}
+
+.block-overflow > div:hover {
+    background-color: #ffe0b5;
+} */
+
+/* Overflow */
+.block-overflow {
+    margin-left: 250px;
+    display: flex;
+    flex-direction:row;
+    gap: 300px;
+}
+
+.block-overflow > div {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: #ddd;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    transition: background-color 0.3s;
+}
+
+.overflow-auto {
+    overflow: auto;
+    background-color: #d0f0c0;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    background-color: #f8d7da;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    
+    background-color: #d1e7dd;
+}
+
+.block-overflow > div:hover {
+    background-color: #ffe0b5;
+}
+
+/* Display & Visibility */
+.block-display-visibility > div {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    border: 2px solid #ffde59;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.block-display-visibility > div:hover {
+    background-color: #f6ffed;
+}
+
+.block-hidden {
+    visibility: hidden;
+}
+
+.block-none {
+    display: none;
+}
+
+.block-inline {
+    display: inline;
+    border: 2px dashed #ffde59;
+    background-color: #f6ffed;
+}
+
+/* Float */
+.block-float > div {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 2px solid #6b8e23;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.block-float > div:hover {
+    background-color: #d3f9d8;
+}
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-none {
+    clear: both;
+}
+
+/* Transform, Filter та @keyframes */
+.block-transform > div {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 2px solid #7b68ee;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease, background-color 0.3s;
+}
+
+.block-transform > div:hover {
+    background-color: #e0dff5;
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.filter-grayscale:hover {
+    filter: grayscale(100%);
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+.animated {
+    animation: move 3s infinite;
+    background-color: #ffcccb;
+}
+
+.animated:hover {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    color: white;
+}

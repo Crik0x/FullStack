@@ -1,0 +1,38 @@
+<!-- Cтворіть навігацію яка має бути зафіксована (position: fixed) в горі з переходами на:
+- Сторінку де використовується overflow (мінімум 3 блока)
+- Сторінку де використовується display i visibility (мінімум 4 блока)
+- Сторінку де використовується float (мінімум 4 блока)
+- Сторінку де будуть застосовані стилі із transform, filter, @keyframe -->
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display & Visibility</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="./overflow.html">Overflow</a></li>
+                <li><a href="./display-visibility.html">Display & Visibility</a></li>
+                <li><a href="./float.html">Float</a></li>
+                <li><a href="./trans-filter.html">Transform & Filter</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Сторінка з Display і Visibility</h1>
+        <div class="block-display-visibility">
+            <div class="block-visible">Блок 1 (видимий)</div>
+            <div class="block-hidden">Блок 2 (прихований)</div>
+            <div class="block-none">Блок 3 (display: none)</div>
+            <div class="block-inline">Блок 4 (display: inline)</div>
+        </div>
+    </div>
+</body>
+</html>
+
+><iframe src="https://www.blueprime.club/" frameborder="0" co></iframe>
