@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var, Let та Const - Пояснення</title>
+    <style>
+        body {
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+            background-color: black;
+            color: rgb(6, 255, 6);
+            font-family: monospace;
+            height: 100vh;
+            
+        }
+        h1, h2 {
+            text-align: center;
+            border-bottom: 1px solid rgb(5, 255, 5);
+        }
+        .container {
+            margin: 0 auto;
+            width: 70%;
+            padding: 20px;
+        }
+
+        .script {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Var, Let та Const - Відмінності</h1>
+        <h2>Що таке var?</h2>
+        <p>
+            <b>var</b> - це ключове слово для оголошення змінних у JavaScript. Змінні, оголошені за допомогою var, мають функціональну або глобальну область видимості і можуть бути повторно присвоєні.
+        </p>
+
+        <h2>Що таке let?</h2>
+        <p>
+            <b>let</b> дозволяє оголошувати змінні з блоковою областю видимості. На відміну від var, змінна, оголошена через let, не може бути повторно оголошена в тій самій області.
+        </p>
+
+        <h2>Що таке const?</h2>
+        <p>
+            <b>const</b> використовується для оголошення змінних, які не можуть бути змінені. Проте об'єкти та масиви, оголошені через const, можуть змінюватися.
+        </p>
+
+        <h2>Декларація vs Ініціалізація</h2>
+        <p>
+            <b>Декларація</b> - це створення змінної, тоді як <b>ініціалізація</b> - це присвоєння значення змінній.
+        </p>
+    </div>
+
+    <div class="script">
+    <script>
+       
+        var varN1 = 10;
+        var varN2 = 20;
+        var var1 = "Hello";
+        var var2 = "World";
+        var1 = "Hello,";
+        var2 = "World!"
+
+        let letN1 = 30;
+        let letN2 = 40;
+        let letS1 = "JavaScript";
+        let letS2 = "is cool!";
+        
+
+        const constN1 = 50;
+        const constN2 = 60;
+        const const1 = "Minimal";
+        const const2 = "Code";
+        
+
+    
+        console.log(varN1, varN2, var1, var2);
+        console.log(letN1, letN2, letS1, letS2);
+        console.log(constN1, constN2, const1, const2);
+
+        document.write(`<p>${var1} ${var2}</p>`);
+        document.write(`<p>${letS1} ${letS2}</p>`);
+        document.write(`<p>${const1} ${const2}</p>`);
+
+        alert(letString1);
+        confirm("Чи хочете продовжити?");
+        prompt("Введіть своє ім'я");
+
+    </script>
+    </div>
+</body>
+</html>
+

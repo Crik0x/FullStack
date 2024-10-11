@@ -78,6 +78,33 @@ header {
     align-self: flex-end;
 }
 
+.right2 {
+    /* position: absolute;
+    width: 333px;
+    
+    left: 1355px;
+    background-color: none; */
+
+    position: absolute;
+            top: -170px; 
+            right: -6vw; 
+            width: 280px; 
+            
+
+}
+
+.header-block .rightsub {
+    position: absolute;
+            /*  
+            right: 24vw; 
+            width: 280px;  */
+    bottom: -165px;
+    background-color: none;
+    width: 40%;
+    align-self: flex-end;
+
+}
+
 .header-block .huge-text {
     margin-top: 40px !important;
     line-height: 36px;
@@ -98,9 +125,200 @@ header {
 
 /* Block 1 */
 .block1 {
-    padding: 90px 0;
+    
+    padding: 200px 0;
     height: 160px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+}
+
+
+
+/* General reset */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pricing-container {
+    
+    justify-content: center;
+    padding: 90px 0;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Pricing Card Styling */
+.pricing-card {
+    background: linear-gradient(135deg, #ffffff, #f0f0ff);
+    border-radius: 15px;
+    padding: 30px;
+    width: auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+    
+}
+
+.comfort {
+    background: linear-gradient(180deg, #275482 0%, #8355C3 47.96%, #C451D6 101.53%);
+
+    color: #fff;
+    display: grid;
+    justify-content: center;
+        width: 406px;
+        height: 450px;
+        box-sizing: border-box;
+        border: 1px solid white;
+        margin-top: 30px;
+        border-radius: 13.84px;
+        
+       
+}
+
+/* Title styling */
+.package-title {
+
+    margin-bottom: 10px;
+    
+    font-family: "Poppins";
+    font-size: 32px;
+    color: black;
+}
+
+.comfort .package-title {
+    color: #fff;
+}
+
+/* Price section styling */
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.base, .premium {
+    box-sizing: border-box;
+    width: 352px;
+    height: 389px;
+    border: 1px solid white;
+    margin-top: 75px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.price {
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 10px;
+}
+
+.comfort .price {
+    color: #fff;
+}
+
+.month {
+    font-size: 18px;
+    color: #7a7d85;
+}
+
+.comfort .month {
+    color: #ccc;
+}
+
+.badge {
+   position: absolute;
+   right: 5px;
+   width: 76px;
+   height: 24px;
+   background-image: url(./assets/images/badge.png);
+}
+
+/* Features List styling */
+.features-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #5c5c61;
+    margin-bottom: 10px;
+}
+
+.comfort .features-list li {
+    color: #ccc;
+}
+
+.iconW {
+    /* color: #bb86fc;
+    margin-right: 10px;
+    font-size: 18px; */
+    list-style-type: none;
+    background-image: url(./assets/images/VectorW.png);
+background-repeat: no-repeat;
+background-position: left center;
+padding-left:30px ;
+}
+
+.icon {
+    /* color: #bb86fc;
+    margin-right: 10px;
+    font-size: 18px; */
+    list-style-type: none;
+    background-image: url(./assets/images/Vector.png);
+background-repeat: no-repeat;
+background-position: left center;
+padding-left:30px ;
+}
+
+.comfort .icon {
+    color: #fff;
+}
+
+/* Divider styling */
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, #bb86fc, #6200ee);
+    margin-bottom: 20px;
+}
+
+/* CTA Button styling */
+.cta-button {
+    width: 100%;
+    background: #FFFFFF;
+    color: rgb(0, 0, 0);
+    padding: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0.31px solid linear-gradient(270deg, #d6a151 0%, #8355C3 45.96%, #13afb4 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+
+
+
+.cta-button:hover {
+    background:  linear-gradient(90deg, #bb86fc, #782be4dc);
 }

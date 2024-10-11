@@ -4,8 +4,11 @@
 }
 
 .container {
+    position: relative; 
+    height: 100%;
     background-color: #131722;
     padding: 0 90px;
+    /* overflow-y: hidden; */
 }
 
 .header-text {
