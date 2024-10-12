@@ -63,33 +63,46 @@
         var var2 = "World";
         var1 = "Hello,";
         var2 = "World!"
+        var varBoolean = true;
 
         let letN1 = 30;
         let letN2 = 40;
         let letS1 = "JavaScript";
         let letS2 = "is cool!";
+        let letBoolean = false;
         
 
         const constN1 = 50;
         const constN2 = 60;
         const const1 = "Minimal";
         const const2 = "Code";
-        
+        const constBoolean = true;
 
     
         console.log(varN1, varN2, var1, var2);
         console.log(letN1, letN2, letS1, letS2);
-        console.log(constN1, constN2, const1, const2);
+        console.log(constN1, constN2, const1, const2, constBoolean);
 
         document.write(`<p>${var1} ${var2}</p>`);
         document.write(`<p>${letS1} ${letS2}</p>`);
         document.write(`<p>${const1} ${const2}</p>`);
 
-        alert(letString1);
-        confirm("Чи хочете продовжити?");
-        prompt("Введіть своє ім'я");
+
+        
+        alert(letS1);
+        let name = prompt("What is your name?");
+        if (name) {
+            alert(`Welcome, ${name}!`);
+        } else {            
+            alert("Welcome, guest! Next Time Type Your Name ;)");
+            confirm("Do you understand?");
+        }
+        
+
+        
     </script>
     </div>
+    
 </body>
 </html>
 
