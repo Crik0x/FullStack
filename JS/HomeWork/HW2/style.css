@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    color: rgb(6, 255, 6);
+    font-family: monospace;
+    padding: 20px;
+}
+h1, h2 {
+    text-align: center;
+    border-bottom: 1px solid rgb(5, 255, 5);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
