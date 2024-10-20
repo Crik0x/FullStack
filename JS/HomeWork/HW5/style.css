@@ -1,0 +1,27 @@
+
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            padding: 20px;
+        }
+        .result {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+        }
+        h1 {
+            text-shadow: 0 0 5px #00ff00;
+        }
+        button {
+            background-color: #001f00;
+            color: #00ff00;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #002b00;
+        }
