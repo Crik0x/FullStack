@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 6</title>
+    <style>
+     
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+
+
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            padding: 20px;
+        }
+        .result {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+        }
+        h1 {
+            text-shadow: 0 0 5px #00ff00;
+        }
+        button {
+            background-color: #001f00;
+            color: #00ff00;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #002b00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Пошук міст та чисел</h1>
+
+   
+    <div class="section">
+        <h2>Лінійний пошук міст</h2>
+        <input type="text" id="cityInput" placeholder="Введіть місто">
+        <button onclick="performLinearSearch()">Пошук</button>
+        <p id="linearResult"></p>
+    </div>
+
+   
+    <div class="section">
+        <h2>Бінарний пошук чисел</h2>
+        <input type="number" id="numberInput" placeholder="Введіть число">
+        <button onclick="performBinarySearch()">Пошук</button>
+        <p id="binaryResult"></p>
+    </div>
+
+    <script src="./code.js"></script>
+</body>
+</html>
